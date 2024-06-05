@@ -20,6 +20,7 @@ fun validatePhoneNumber(phone:String):Boolean{
     }
     return true
 }
+
 fun validateUserName(username:String):Boolean{
     val special = Pattern.compile ("[!@#$%&*()_+=|<>?{}\\[\\]~-]")
     if (special.matcher(username).find())
