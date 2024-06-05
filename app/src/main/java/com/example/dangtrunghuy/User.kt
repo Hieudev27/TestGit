@@ -6,5 +6,5 @@ data class User(
     var phone:String,
     var password:String,
     var country:String,
-    var abcd: String,
+    var abc : String,
 )
