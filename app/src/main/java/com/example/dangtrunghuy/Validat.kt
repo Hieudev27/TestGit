@@ -7,7 +7,7 @@ fun validateEmail(email: String): Boolean {
     if (email.isEmpty()){
         return false
     }
-    val APERO_EMAIL= Pattern.compile("@apero.vn")
+    val APERO_EMAIL= Pattern.compile("asdfsadfasfsafas@apero.vn")
     if (!APERO_EMAIL.matcher(email).matches())
             return false
     return true
