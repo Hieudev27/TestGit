@@ -7,7 +7,7 @@ fun validateEmail(email: String): Boolean {
     if (email.isEmpty()){
         return false
     }
-    val APERO_EMAIL_PATTERN = Pattern.compile("[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}"+"\\@apero.vn")
+    val APERO_EMAIL_PATTERN = Pattern.compile("@apero.vn")
     if (!APERO_EMAIL_PATTERN.matcher(email).matches())
             return false
     return true
@@ -15,7 +15,7 @@ fun validateEmail(email: String): Boolean {
 
 fun validatePhoneNumber(phone:String):Boolean{
     val phoneNumber = phone.toInt()
-    if (phoneNumber.toString().length != 10 || phoneNumber.toString().isEmpty() || phoneNumber.toString().length != 10){
+    if (phoneNumber.toString().length != 10){
         return false
     }
     return true
