@@ -25,7 +25,8 @@ class LoginActivity : AppCompatActivity() {
         binding.btnSignIn.setOnClickListener {
          var email = binding.edtEmail.text.toString()
          var password = binding.edtPassword.text.toString()
-            Toast.makeText(this,"adsad",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "nhanh hang", Toast.LENGTH_SHORT).show()
+            Log.d("Test","Loi loi loi")
             if (email.equals(UserLogin.email) && password.equals(UserLogin.password)){
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
