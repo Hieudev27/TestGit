@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         binding.btnSignIn.setOnClickListener {
          var email = binding.edtEmail.text.toString()
          var password = binding.edtPassword.text.toString()
-            Log.d("Test","Ahihi")
+            Log.d("123","1231")
             if (email.equals(UserLogin.email) && password.equals(UserLogin.password)){
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
